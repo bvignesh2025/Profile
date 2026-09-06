@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vigneshwar Balamurugan — Software Engineer specializing in Production Backend (Java / Spring Boot, Python), RAG & Data Pipelines, and Embedded Hardware Systems.">
+  <meta name="keywords" content="Vigneshwar Balamurugan, Software Engineer, SDE, SWE, Java, Spring Boot, Python, RAG, PostgreSQL, ESP32, LoRa, Chennai">
+  <meta name="author" content="Vigneshwar Balamurugan">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Vigneshwar Balamurugan | Software Engineer (SDE / SWE)">
+  <meta property="og:description" content="Software Engineer specializing in Backend Architecture, High-Concurrency RAG Pipelines, and Embedded Hardware Systems.">
+  <meta property="og:type" content="website">
+  
+  <title>Vigneshwar Balamurugan | Software Engineer (SDE / SWE)</title>
+  
+  <!-- Favicon (SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =================================================================
+       NAVIGATION HEADER
+       ================================================================= -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-monogram">VB</span>
+        <span class="brand-name">Vigneshwar B.</span>
+        <span class="brand-badge">SDE / SWE</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#honors">Honors</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- LeetCode Nav Link -->
+        <a href="https://leetcode.com/u/bvigneshwar/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LeetCode Profile (172 Solved)">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.135a4.773 4.773 0 0 0-2.037.147L14.444.438A1.374 1.374 0 0 0 13.483 0zm4.747 13.497a1.38 1.38 0 0 0-1.38 1.38v.006a1.38 1.38 0 0 0 1.38 1.38h4.39a1.38 1.38 0 0 0 1.38-1.38v-.006a1.38 1.38 0 0 0-1.38-1.38h-4.39z"/></svg>
+        </a>
+
+        <!-- GitHub Nav Link -->
+        <a href="https://github.com/bvignesh2025" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+
+        <!-- Theme Toggle (Dark/Light) -->
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark/light mode" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Quick Contact CTA -->
+        <a href="#contact" class="btn btn-sm btn-outline">Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="page-wrapper">
+    <div class="content-container">
+
+      <!-- =================================================================
+           SECTION 1: HERO & CORE IDENTITY
+           ================================================================= -->
+      <section id="hero" class="hero-section">
+        <!-- Status Pill -->
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>Software Engineer · Chennai, India · Open for SDE / SWE Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Vigneshwar <span class="gradient-text">Balamurugan</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Software Engineer specializing in <strong>Production Backend Architecture</strong> (Java / Spring Boot, Python), 
+          <strong>High-Concurrency RAG & Data Pipelines</strong>, and <strong>Embedded Hardware Systems</strong>. 
+          Currently at Cognizant, with international project collaboration experience at Robert Bosch.
+        </p>
+
+        <!-- Key Highlights Badges -->
+        <div class="badge-group">
+          <span class="badge badge-accent">8.9 CGPA (ECE + Minor in Entrepreneurship)</span>
+          <a href="https://leetcode.com/u/bvigneshwar/" target="_blank" rel="noopener noreferrer" class="badge badge-accent" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px;">
+            <span>⚡ 172 LeetCode Solved (Top 35%) ↗</span>
+          </a>
+          <span class="badge badge-accent">Google Event Winner (A* & FSM)</span>
+          <span class="badge badge-accent">NCC 'A' Certified</span>
+          <a href="https://github.com/bvignesh2025" target="_blank" rel="noopener noreferrer" class="badge" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px;">
+            <span>🐙 GitHub: @bvignesh2025 ↗</span>
+          </a>
+          <span class="badge">Java / Spring Boot</span>
+          <span class="badge">Python</span>
+          <span class="badge">Data Structures & Algorithms</span>
+          <span class="badge">RAG & Vector Search</span>
+          <span class="badge">PostgreSQL & pgvector</span>
+          <span class="badge">ESP32 & LoRa</span>
+          <span class="badge">Docker & Linux</span>
+        </div>
+
+        <!-- Call to Actions -->
+        <div class="hero-actions">
+          <a href="resume.html" target="_blank" class="btn btn-primary" id="resumeDownloadBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            View / Print Resume
+          </a>
+
+          <a href="mailto:bvignesh2025@gmail.com" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Get In Touch
+          </a>
+
+          <a href="#projects" class="btn btn-ghost">
+            Explore Projects ↓
+          </a>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="stats-strip">
+          <div class="stat-card">
+            <div class="stat-number">8.9</div>
+            <div class="stat-label">CGPA in ECE (CS Focus)</div>
+          </div>
+          <a href="https://leetcode.com/u/bvigneshwar/" target="_blank" rel="noopener noreferrer" class="stat-card" style="text-decoration:none;display:block;" title="View LeetCode Profile">
+            <div class="stat-number" style="color:var(--accent-primary);">172 ↗</div>
+            <div class="stat-label">LeetCode Problems Solved</div>
+          </a>
+          <div class="stat-card">
+            <div class="stat-number">Top 35%</div>
+            <div class="stat-label">Global Problem Solving Ranking</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4 Years</div>
+            <div class="stat-label">Elected Class Representative</div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SECTION 2: ABOUT / ENGINEERING PROFILE
+           ================================================================= -->
+      <section id="about" class="content-section">
+        <div class="section-header">
+          <div class="section-eyebrow">Engineering Profile</div>
+          <h2 class="section-heading">Core Software Craftsmanship & Hardware Roots</h2>
+        </div>
+
+        <div class="card narrative-card">
+          <div class="narrative-grid">
+            <div class="narrative-col">
+              <h3 class="narrative-subtitle">Background & Education</h3>
+              <p>
+                Graduated with a Bachelor’s in <strong>Electronics & Communication Engineering (8.9 CGPA, Focus on Computer Science)</strong> 
+                and a <strong>Minor in Entrepreneurship</strong> from Meenakshi Sundararajan Engineering College. My foundation bridges 
+                rigorous algorithmic computer science (172 LeetCode problems solved) with practical hardware comprehension — from event-driven 
+                energy harvesting microcontrollers (TEG + ESP32 + LoRa) to core object-oriented software engineering.
+              </p>
+            </div>
+            <div class="narrative-col">
+              <h3 class="narrative-subtitle">Professional Growth</h3>
+              <p>
+                At <strong>Cognizant</strong>, I contribute to production AI RAG automation microservices and have been selected to lead an upcoming 
+                RAG AI pipeline for our Philips healthcare client. During training, I led a 6-engineer squad delivering a Java/Spring Boot vehicle platform. 
+                At <strong>Robert Bosch</strong>, I trained the plant Logistics department on automation and collaborated with Bosch Headquarters in Germany 
+                on logistics carbon data, presenting outcomes directly to the Department Head and 8 lead managers.
+              </p>
+            </div>
+          </div>
+
+          <div class="quote-banner">
+            <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-8.983z"/></svg>
+            <p>
+              "Software Engineer focused on production backend systems, algorithmic problem-solving, 
+              and practical embedded sensor integration."
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SECTION 3: ENGINEERING CAPABILITIES
+           ================================================================= -->
+      <section id="capabilities" class="content-section">
+        <div class="section-header">
+          <div class="section-eyebrow">Technical Competence</div>
+          <h2 class="section-heading">Core Engineering Capabilities</h2>
+          <p class="section-desc">Key architectural domains and systems I design, build, and maintain.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Capability 1: Backend & Concurrency -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">💻</span>
+              <h3>Production Backend & Concurrency</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Frameworks:</strong> Java (Spring Boot 3, Java 21) and Python (FastAPI).</li>
+              <li><strong>Design Principles:</strong> OOPs, RESTful API design, thread-safe request handling, and clean modular code.</li>
+              <li><strong>Quality & Security:</strong> AES-256 payload encryption, 100% SonarQube adherence, and automated unit testing.</li>
+            </ul>
+          </div>
+
+          <!-- Capability 2: Search, Data & RAG -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">📊</span>
+              <h3>Search, Databases & RAG Pipelines</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>RAG Architecture:</strong> Retrieval-Augmented Generation using LangChain, pgvector, and LLM automation pipelines.</li>
+              <li><strong>Hybrid Retrieval:</strong> Combining BM25 keyword matching with dense cosine vector embeddings for sub-100ms queries.</li>
+              <li><strong>Databases:</strong> PostgreSQL schema modeling, indexing (B-Tree, HNSW), and connection management.</li>
+            </ul>
+          </div>
+
+          <!-- Capability 3: Algorithms & Problem Solving -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🧠</span>
+              <h3>Data Structures & Algorithms (DSA)</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Competitive Coding:</strong> 172 LeetCode problems solved (Top 35% global ranking); qualified Amazon technical rounds.</li>
+              <li><strong>Graph & State Logic:</strong> Won Google GDG Challenge using A* pathfinding and deterministic Finite State Machines (FSM).</li>
+              <li><strong>Core Concepts:</strong> Dynamic Programming, Trees, Graphs, Two Pointers, Time & Space Complexity analysis.</li>
+            </ul>
+          </div>
+
+          <!-- Capability 4: Embedded & Sensor Systems -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">⚙️</span>
+              <h3>Embedded & Sensor Systems</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Hardware Platforms:</strong> ESP32, microcontrollers, BMP180 barometric pressure sensors, and Bluetooth modules.</li>
+              <li><strong>Low-Power Telemetry:</strong> Event-driven LoRa communication and Thermoelectric Generator (TEG) energy harvesting.</li>
+              <li><strong>ECE Foundation:</strong> Microprocessor architecture, signal processing, sensor interfacing, and relay control circuits.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SECTION 4: PROFESSIONAL EXPERIENCE
+           ================================================================= -->
+      <section id="experience" class="content-section">
+        <div class="section-header">
+          <div class="section-eyebrow">Work Experience</div>
+          <h2 class="section-heading">Professional Experience</h2>
+          <p class="section-desc">Hands-on enterprise software engineering and corporate industrial collaboration.</p>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Experience 1: Cognizant -->
+          <div class="timeline-card card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Programmer Analyst / Software Engineer</h3>
+                <div class="company-name">Cognizant Technology Solutions</div>
+              </div>
+              <div class="time-location">
+                <span class="badge badge-accent">Aug 2025 – Present</span>
+                <span class="location-text">Chennai, India</span>
+              </div>
+            </div>
+            
+            <p class="role-summary">
+              Core engineer building AI-driven automation workflows and backend systems. Selected to lead the upcoming RAG pipeline initiative for an enterprise healthcare client.
+            </p>
+
+            <ul class="role-bullets">
+              <li>
+                <strong>AI RAG Production Pipeline:</strong> Core team contributor developing LLM-powered RAG automation for client support workflows, replacing repetitive manual processing with vector-indexed retrieval.
+              </li>
+              <li>
+                <strong>Upcoming Project Leadership:</strong> Slated and selected to lead the architecture and delivery of a new RAG AI system for our <strong>Philips</strong> healthcare client account.
+              </li>
+              <li>
+                <strong>Vehicle Insurance Platform (Team Lead):</strong> Completed rigorous 3-month foundational engineering training in Java, Spring Boot, and DBMS; elected to lead a team of 6 engineers to build an enterprise vehicle insurance application featuring AES-256 encryption and 100% SonarQube compliance.
+              </li>
+              <li>
+                <strong>Containerized Deployment:</strong> Packaged distributed services using Docker and Linux, establishing automated CI/CD checks and semantic versioning.
+              </li>
+            </ul>
+
+            <div class="tech-pill-group">
+              <span class="tech-pill">Java 21</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">RAG & pgvector</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Linux</span>
+              <span class="tech-pill">Git</span>
+            </div>
+          </div>
+
+          <!-- Experience 2: Robert Bosch -->
+          <div class="timeline-card card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Project Intern — Automotive Electronics</h3>
+                <div class="company-name">Robert Bosch Automotive Electronics</div>
+              </div>
+              <div class="time-location">
+                <span class="badge">Jul 2024 – Aug 2024</span>
+                <span class="location-text">Bangalore, India</span>
+              </div>
+            </div>
+            
+            <p class="role-summary">
+              Executed data analytics, workflow automation, and international cross-functional collaboration across automotive electronics plant operations.
+            </p>
+
+            <ul class="role-bullets">
+              <li>
+                <strong>Departmental Hands-On Training:</strong> Conducted live, practical training sessions for the LOI (Logistics & Industrial Engineering) Department on KNIME analytics and RPA, enabling automated data workflows that eliminated 4 manual man-hours monthly (~20% operational efficiency gain).
+              </li>
+              <li>
+                <strong>Collaboration with Bosch Headquarters (Germany):</strong> Collaborated directly with teams at Bosch German Headquarters to compile, analyze, and benchmark plant logistics carbon emissions (CO2 data).
+              </li>
+              <li>
+                <strong>Executive Leadership Presentation:</strong> Synthesized emission analysis into an executive strategy deck and presented findings directly to the Department Head and 8 Lead Managers to support company sustainability targets.
+              </li>
+            </ul>
+
+            <div class="tech-pill-group">
+              <span class="tech-pill">KNIME Analytics</span>
+              <span class="tech-pill">Process Automation</span>
+              <span class="tech-pill">Cross-Border Collaboration</span>
+              <span class="tech-pill">Executive Presentations</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SECTION 5: FEATURED PROJECTS
+           ================================================================= -->
+      <section id="projects" class="content-section">
+        <div class="section-header">
+          <div class="section-eyebrow">Engineering Artifacts</div>
+          <h2 class="section-heading">Featured Projects</h2>
+          <p class="section-desc">Hands-on applications spanning embedded hardware, hybrid search databases, and computer vision.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="embedded">Embedded Hardware</button>
+          <button class="filter-btn" data-filter="systems">Backend & Databases</button>
+          <button class="filter-btn" data-filter="ai">Computer Vision & AI</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: Forest Fire Early Detection System -->
+          <div class="project-card card" data-category="embedded" data-url="https://github.com/bvignesh2025/Forest-Fire-Standalone-Instant-Detection-System-FFDSS-">
+            <div class="project-top">
+              <div class="project-category">Embedded & Energy Harvesting</div>
+              <div class="project-status">Capstone Project</div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/bvignesh2025/Forest-Fire-Standalone-Instant-Detection-System-FFDSS-" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Standalone Forest Fire Early Detection System ↗
+              </a>
+            </h3>
+            <p class="project-description">
+              Autonomous environmental monitoring system engineered with <strong>Thermoelectric Generators (TEG)</strong>, 
+              <strong>ESP32 microcontrollers</strong>, and <strong>LoRa transceivers</strong>. Uses thermal energy harvesting 
+              to power event-driven wakeups and long-range fire alerting without relying on frequent battery replacements in remote wilderness.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Energy Harvesting:</span> TEG converts ambient forest thermal gradients into operational electricity.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">Communication:</span> Long-range, low-power LoRa protocol for multi-kilometer telemetry transmission.
+              </div>
+            </div>
+            <div class="tech-pill-group" style="margin-bottom: 14px;">
+              <span class="tech-pill">ESP32</span>
+              <span class="tech-pill">TEG Harvesting</span>
+              <span class="tech-pill">LoRa</span>
+              <span class="tech-pill">Sensors</span>
+              <span class="tech-pill">Low-Power Systems</span>
+            </div>
+            <div class="project-action-row">
+              <a href="https://github.com/bvignesh2025/Forest-Fire-Standalone-Instant-Detection-System-FFDSS-" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: TPMS 4.0 -->
+          <div class="project-card card" data-category="embedded" data-url="https://github.com/bvignesh2025/TPMS-4.0">
+            <div class="project-top">
+              <div class="project-category">Embedded IoT & Mobile App</div>
+              <div class="project-status">Hardware & Software</div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/bvignesh2025/TPMS-4.0" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                TPMS 4.0: Tire Pressure Monitoring System ↗
+              </a>
+            </h3>
+            <p class="project-description">
+              Real-time tire pressure and temperature telemetry solution built with an <strong>ESP32</strong> connected to a 
+              <strong>BMP180 sensor</strong>, paired with a custom Bluetooth Android app, cloud data logging, and a centralized web dashboard 
+              for coal dumper fleet monitoring.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Architecture:</span> ESP32 + BMP180 sensor telemetry streamed over Bluetooth to mobile app and cloud.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">Visibility:</span> Centralized web dashboard for real-time fleet pressure threshold monitoring.
+              </div>
+            </div>
+            <div class="tech-pill-group" style="margin-bottom: 14px;">
+              <span class="tech-pill">ESP32</span>
+              <span class="tech-pill">BMP180 Sensor</span>
+              <span class="tech-pill">Bluetooth</span>
+              <span class="tech-pill">Android App</span>
+              <span class="tech-pill">Cloud Dashboard</span>
+            </div>
+            <div class="project-action-row">
+              <a href="https://github.com/bvignesh2025/TPMS-4.0" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Concurrent Hybrid Database Search Engine -->
+          <div class="project-card card" data-category="systems" data-url="https://github.com/bvignesh2025/Intelligent-Resume-Parser-RAG">
+            <div class="project-top">
+              <div class="project-category">Backend & Databases</div>
+              <div class="project-status">Personal Engineering Project</div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/bvignesh2025/Intelligent-Resume-Parser-RAG" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Intelligent Resume Parser & Hybrid Search Engine ↗
+              </a>
+            </h3>
+            <p class="project-description">
+              High-concurrency search pipeline built with Java & Spring Boot over PostgreSQL. Fuses exact relational indexing (BM25) 
+              with dense vector embeddings (pgvector) to deliver sub-100ms retrieval without blocking worker threads.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Latency:</span> Sub-100ms query turnaround with multi-threaded connection pooling.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">Indexing:</span> Hybrid BM25 keyword matching combined with pgvector cosine similarity.
+              </div>
+            </div>
+            <div class="tech-pill-group" style="margin-bottom: 14px;">
+              <span class="tech-pill">Java 21</span>
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">pgvector</span>
+              <span class="tech-pill">Hybrid Search</span>
+            </div>
+            <div class="project-action-row">
+              <a href="https://github.com/bvignesh2025/Intelligent-Resume-Parser-RAG" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Edge-Deployed Industrial Safety Engine -->
+          <div class="project-card card" data-category="ai" data-url="https://github.com/bvignesh2025/Industrial_Ai_Agent">
+            <div class="project-top">
+              <div class="project-category">Computer Vision & Edge AI</div>
+              <div class="project-status badge-accent">Code Prototype (Active Dev)</div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://github.com/bvignesh2025/Industrial_Ai_Agent" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                Edge-Deployed Industrial Safety Engine (AI Agent) ↗
+              </a>
+            </h3>
+            <p class="project-description">
+              Software prototype designed for factory safety compliance, detecting PPE compliance and hazard zones. 
+              Built with Python and YOLOv8, packaged as containerized microservices via Docker Compose ready for future hardware integration.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-key">Inference:</span> Multi-stream YOLOv8 object detection pipelines with FastAPI backend.
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-key">Status:</span> Core algorithmic code and container architecture verified; hardware integration in progress.
+              </div>
+            </div>
+            <div class="tech-pill-group" style="margin-bottom: 14px;">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">YOLOv8</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Docker Compose</span>
+              <span class="tech-pill">Computer Vision</span>
+            </div>
+            <div class="project-action-row">
+              <a href="https://github.com/bvignesh2025/Industrial_Ai_Agent" target="_blank" rel="noopener noreferrer" class="project-code-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                View Repository on GitHub ↗
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SECTION 6: TECHNICAL ARSENAL / SKILLS
+           (Strictly prioritized by hands-on experience first)
+           ================================================================= -->
+      <section id="skills" class="content-section">
+        <div class="section-header">
+          <div class="section-eyebrow">Technical Skills</div>
+          <h2 class="section-heading">Technical Arsenal</h2>
+          <p class="section-desc">Prioritized by hands-on production experience, engineering coursework, and verified tools.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill 1: Core Programming -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">💻</span>
+              <h3>Programming Languages</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Python:</strong> Hands-on production RAG pipelines, FastAPI, data extraction, and CS50 certified.</li>
+              <li><strong>Java:</strong> Core Java, Java 21, Spring Boot microservices, OOPs, multi-threading, trained at Cognizant.</li>
+              <li><strong>C & C++:</strong> Academic ECE coursework, microcontroller firmware, and embedded project development.</li>
+              <li><strong>SQL:</strong> Relational schema design, query optimization, joins, indexing, and CS50 certified.</li>
+              <li><strong>Web Basics:</strong> JavaScript, HTML5, CSS3, Streamlit interfaces.</li>
+            </ul>
+          </div>
+
+          <!-- Skill 2: Backend, Databases & RAG -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">📊</span>
+              <h3>Backend, Data & AI</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Frameworks:</strong> Spring Boot 3, FastAPI, REST APIs.</li>
+              <li><strong>Databases:</strong> PostgreSQL, pgvector, Firebase, Relational Database Design.</li>
+              <li><strong>RAG & AI:</strong> LangChain, vector retrieval (BM25 + Dense Vectors), LLM agent workflows, prompt tuning.</li>
+              <li><strong>Analytics:</strong> KNIME Analytics Platform (Level 3 Certified — $200 tier), RPA concepts.</li>
+            </ul>
+          </div>
+
+          <!-- Skill 3: Computer Science & DSA -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🧠</span>
+              <h3>CS Fundamentals & DSA</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Problem Solving:</strong> 172 LeetCode problems solved (Top 35% global ranking).</li>
+              <li><strong>Core Fundamentals:</strong> Data Structures & Algorithms, Object-Oriented Programming (OOP), System Design basics.</li>
+              <li><strong>Algorithms:</strong> A* Search, Finite State Machines (FSM), Sorting & Searching, Graph Traversals.</li>
+              <li><strong>Code Quality:</strong> Time & Space Complexity Analysis, Debugging, SonarQube compliance.</li>
+            </ul>
+          </div>
+
+          <!-- Skill 4: Embedded & DevOps Tooling -->
+          <div class="card skill-category-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-icon">🛠️</span>
+              <h3>Embedded Systems & DevOps</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Embedded Platforms:</strong> ESP32, BMP180 sensor interfacing, LoRa modules, TEG energy harvesting.</li>
+              <li><strong>Protocols:</strong> Bluetooth / BLE, I2C, SPI, UART, LoRa communication.</li>
+              <li><strong>DevOps & Tools:</strong> Docker, Docker Compose, Linux CLI, Git, GitHub, VS Code.</li>
+              <li><strong>Practices:</strong> Agile / Scrum methodologies, sprint workflows, JIRA.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SECTION 7: HONORS, CERTIFICATIONS & LEADERSHIP
+           ================================================================= -->
+      <section id="honors" class="content-section">
+        <div class="section-header">
+          <div class="section-eyebrow">Credentials & Leadership</div>
+          <h2 class="section-heading">Verified Honors & Leadership</h2>
+          <p class="section-desc">Competitive achievements, university leadership, and international certifications.</p>
+        </div>
+
+        <div class="card" style="padding: 24px;">
+          <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+            <div>
+              <div class="skill-cat-header" style="border-bottom: 1px solid var(--border-divider); padding-bottom: 8px; margin-bottom: 12px;">
+                <span class="skill-cat-icon">🏆</span>
+                <h3>Competitive & Technical Honors</h3>
+              </div>
+              <ul class="skill-list">
+                <li><strong>Google GDG Game Dev Challenge Winner:</strong> Top-ranking AI agent implemented with optimized A* pathfinding and deterministic Finite State Machines (FSM).</li>
+                <li><strong><a href="https://leetcode.com/u/bvigneshwar/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-primary);text-decoration:underline;text-underline-offset:3px;">LeetCode Profile (172 Solved ↗)</a>:</strong> 172 algorithmic problems solved (Top 35% global ranking; qualified Amazon technical assessment rounds).</li>
+                <li><strong>Team GIGABIT Founder:</strong> Led technical project team to national finals at NIT and VIT-AP technical competitions (MURD project).</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="skill-cat-header" style="border-bottom: 1px solid var(--border-divider); padding-bottom: 8px; margin-bottom: 12px;">
+                <span class="skill-cat-icon">🎖️</span>
+                <h3>Leadership & Certifications</h3>
+              </div>
+              <ul class="skill-list">
+                <li><strong>Class Representative (All 4 Years):</strong> Elected student representative for the ECE department across all 4 undergraduate years.</li>
+                <li><strong>Technical Event Leadership:</strong> Led and organized 2 major college symposium events, including heading the Pranav2k24 technical symposium website and competitions.</li>
+                <li><strong>Team Lead (Cognizant):</strong> Led a team of 6 engineers to deliver a vehicle insurance platform with AES-256 encryption.</li>
+                <li><strong>NCC 'A' Certificate:</strong> National Cadet Corps recognized for discipline, teamwork, and operational resilience.</li>
+                <li><strong>Academic Distinction:</strong> 8.9 / 10 CGPA (ECE with CS Focus + Minor in Entrepreneurship).</li>
+                <li><strong>Certifications:</strong> Harvard CS50 (Python & SQL) · KNIME Platform L3 Proficiency ($200 Certified) · EF-SET C1 Advanced English.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- =================================================================
+           SECTION 8: CONTACT & CONNECT
+           ================================================================= -->
+      <section id="contact" class="content-section">
+        <div class="card contact-card">
+          <div class="contact-header">
+            <div class="section-eyebrow">Get In Touch</div>
+            <h2 class="contact-title">Let's Connect for SDE & SWE Roles</h2>
+            <p class="contact-desc">
+              Currently based in Chennai, India. Open to <strong>Software Development Engineer (SDE)</strong>, 
+              <strong>Software Engineer (SWE)</strong>, and <strong>Backend / Systems Engineering</strong> roles.
+            </p>
+          </div>
+
+          <div class="contact-methods">
+            <!-- Email Item with Click to Copy -->
+            <div class="contact-method-item" id="copyEmailBtn" title="Click to copy email">
+              <span class="method-icon">✉️</span>
+              <div class="method-details">
+                <span class="method-label">Email (Click to copy)</span>
+                <span class="method-value" id="emailText">bvignesh2025@gmail.com</span>
+              </div>
+              <span class="copy-badge" id="copyBadge">Copy</span>
+            </div>
+
+            <!-- Phone -->
+            <a href="tel:+917540022142" class="contact-method-item">
+              <span class="method-icon">📞</span>
+              <div class="method-details">
+                <span class="method-label">Phone</span>
+                <span class="method-value">+91 75400 22142</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Profile -->
+            <a href="https://www.linkedin.com/in/vigneshwar-b-882503283/" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+              <span class="method-icon">🔗</span>
+              <div class="method-details">
+                <span class="method-label">LinkedIn</span>
+                <span class="method-value">linkedin.com/in/vigneshwar-b</span>
+              </div>
+            </a>
+
+            <!-- GitHub Profile -->
+            <a href="https://github.com/bvignesh2025" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+              <span class="method-icon">🐙</span>
+              <div class="method-details">
+                <span class="method-label">GitHub</span>
+                <span class="method-value">github.com/bvignesh2025</span>
+              </div>
+              <span class="copy-badge">Profile ↗</span>
+            </a>
+
+            <!-- LeetCode Profile -->
+            <a href="https://leetcode.com/u/bvigneshwar/" target="_blank" rel="noopener noreferrer" class="contact-method-item">
+              <span class="method-icon">⚡</span>
+              <div class="method-details">
+                <span class="method-label">LeetCode (172 Solved)</span>
+                <span class="method-value">leetcode.com/u/bvigneshwar</span>
+              </div>
+              <span class="copy-badge">Profile ↗</span>
+            </a>
+          </div>
+
+          <div class="contact-action-row">
+            <a href="mailto:bvignesh2025@gmail.com" class="btn btn-primary">
+              Send Direct Email
+            </a>
+            <a href="resume.html" target="_blank" class="btn btn-outline">
+              View / Print Resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /.content-container -->
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+       ================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span>© 2026 Vigneshwar Balamurugan</span>
+        <span class="separator">·</span>
+        <span>Software Engineer (SDE / SWE) · Backend, Systems & Applied AI</span>
+      </div>
+      <div class="footer-right">
+        <span>Chennai, Tamil Nadu, India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element for copy interactions -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">Copied to clipboard!</div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
